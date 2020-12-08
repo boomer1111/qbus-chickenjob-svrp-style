@@ -79,4 +79,4 @@ AddEventHandler('gc-chickenjob:sell', function()
 end)
 
 
-print("this resource is converted by AjazKhanKaBaap#9016")
+print("this resource is converted by SPOOKY#3717")
