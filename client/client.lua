@@ -122,7 +122,7 @@ Citizen.CreateThread(function()
 --
 		if dist <= 0.5 then
 			if IsControlJustPressed(0, Keys['E']) then -- "E"
-			TriggerServerEvent("gc-chickenjob:startChicken")
+			TriggerServerEvent("gg-chickenjob:startChicken")
 			LapChicken()
 			end			
 		end
@@ -359,7 +359,7 @@ function TepnijWyjscie()
 		ClearPedTasks(GetPlayerPed(-1))
 		DeleteEntity(prop)
 		QBCore.Functions.Notify("Take Alived Chicken To Process Area ..", "primary")
-		TriggerServerEvent("gc-chickenjob:getNewChicken")
+		TriggerServerEvent("gg-chickenjob:getNewChicken")
 		end
 		end
 	end
@@ -415,7 +415,7 @@ function packingg(stanowisko)
 				disableMouse = false,
 				disableCombat = true,
 			}, {}, {}, {}, function()
-			TriggerServerEvent("gc-chickenjob:getpackedChicken",2)
+			TriggerServerEvent("gg-chickenjob:getpackedChicken",2)
 			QBCore.Functions.Notify("Keep packing the chicken or go to the vehicle and store it.", "primary")
 			ClearPedTasks(GetPlayerPed(-1))
 			DeleteEntity(karton)
@@ -486,7 +486,7 @@ function portioning(position)
 			}, {}, {}, {}, function()
 			
 			QBCore.Functions.Notify("Now Pack slaughtered chicken!", "primary")
-			TriggerServerEvent("gc-chickenjob:getcutChicken", 1)
+			TriggerServerEvent("gg-chickenjob:getcutChicken", 1)
 			FreezeEntityPosition(GetPlayerPed(-1),false)
 			DeleteEntity(kurczak)
 			DeleteEntity(nozyk)
@@ -509,7 +509,7 @@ function portioning(position)
 			}, {}, {}, {}, function()
 
 			QBCore.Functions.Notify("Now Pack slaughtered chicken!", "primary")
-			TriggerServerEvent("gc-chickenjob:getcutChicken", 1)
+			TriggerServerEvent("gg-chickenjob:getcutChicken", 1)
 			FreezeEntityPosition(GetPlayerPed(-1),false)
 			DeleteEntity(kurczak)
 			DeleteEntity(nozyk)
@@ -544,7 +544,7 @@ function packedsell()
 				disableMouse = false,
 				disableCombat = true,
 			}, {}, {}, {}, function()
-				TriggerServerEvent("gc-chickenjob:sell",3)
+				TriggerServerEvent("gg-chickenjob:sell",3)
 				ClearPedTasks(GetPlayerPed(-1))
 				DeleteEntity(prop)
 			end, function() -- Cancel
