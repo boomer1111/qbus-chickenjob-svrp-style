@@ -1,8 +1,8 @@
 QBCore= nil
 TriggerEvent('QBCore:GetObject', function(obj) QBCore= obj end)
 
-RegisterServerEvent('gc-chickenjob:getNewChicken')
-AddEventHandler('gc-chickenjob:getNewChicken', function()
+RegisterServerEvent('gg-chickenjob:getNewChicken')
+AddEventHandler('gg-chickenjob:getNewChicken', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local pick = ''
@@ -13,8 +13,8 @@ AddEventHandler('gc-chickenjob:getNewChicken', function()
       end
 end)
 
-RegisterServerEvent('gc-chickenjob:startChicken')
-AddEventHandler('gc-chickenjob:startChicken', function()
+RegisterServerEvent('gg-chickenjob:startChicken')
+AddEventHandler('gg-chickenjob:startChicken', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
 
@@ -24,8 +24,8 @@ AddEventHandler('gc-chickenjob:startChicken', function()
       end
 end)
 
-RegisterServerEvent('gc-chickenjob:getcutChicken')
-AddEventHandler('gc-chickenjob:getcutChicken', function()
+RegisterServerEvent('gg-chickenjob:getcutChicken')
+AddEventHandler('gg-chickenjob:getcutChicken', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local pick = ''
@@ -38,8 +38,8 @@ AddEventHandler('gc-chickenjob:getcutChicken', function()
       end
 end)
 
-RegisterServerEvent('gc-chickenjob:getpackedChicken')
-AddEventHandler('gc-chickenjob:getpackedChicken', function()
+RegisterServerEvent('gg-chickenjob:getpackedChicken')
+AddEventHandler('gg-chickenjob:getpackedChicken', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local pick = ''
@@ -57,8 +57,8 @@ local ItemList = {
     ["packagedchicken"] = math.random(250, 350),
 }
 
-RegisterServerEvent('gc-chickenjob:sell')
-AddEventHandler('gc-chickenjob:sell', function()
+RegisterServerEvent('gg-chickenjob:sell')
+AddEventHandler('gg-chickenjob:sell', function()
     local src = source
     local price = 0
     local Player = QBCore.Functions.GetPlayer(src)
